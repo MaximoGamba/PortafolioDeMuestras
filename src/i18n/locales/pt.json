@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "title": "DevPortfolio | Sites e sistemas sob medida para o seu negócio",
+    "description": "Faço sites e sistemas para organizar o seu negócio: estoque, vendas, agendamentos, clientes e cobranças. Sob medida, com orçamento claro e clientes no mundo todo."
+  },
+  "nav": {
+    "services": "O que eu faço",
+    "industries": "Seu segmento",
+    "projects": "Exemplos",
+    "tech": "Como trabalho",
+    "contact": "Contato",
+    "whatsapp": "WhatsApp",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu"
+  },
+  "language": {
+    "label": "Idioma",
+    "select": "Selecionar idioma"
+  },
+  "hero": {
+    "badge": "Sites e sistemas sob medida",
+    "title": "Organizo o seu negócio com um site e um sistema feitos sob medida.",
+    "subtitle": "Se você ainda trabalha com planilhas, cadernos ou mensagens soltas, monto uma ferramenta simples com tudo em um só lugar: vendas, estoque, agendamentos ou clientes. E o site para que te encontrem.",
+    "ctaPrimary": "Ver exemplos",
+    "ctaSecondary": "Contato",
+    "highlights": {
+      "pricing": "Orçamento claro",
+      "availability": "Posso começar esta semana",
+      "progress": "Você acompanha os avanços",
+      "global": "Clientes no mundo todo"
+    }
+  },
+  "services": {
+    "title": "O que posso fazer por você",
+    "subtitle": "Ferramentas simples de usar, pensadas para o dia a dia do seu negócio.",
+    "items": {
+      "fullstack": {
+        "title": "Sites e lojas online",
+        "description": "Seu próprio site, rápido e bonito no celular. Para mostrar o que você faz, receber contatos ou vender online."
+      },
+      "management": {
+        "title": "Sistemas para organizar o negócio",
+        "description": "Um programa sob medida para controlar estoque, vendas, agendamentos ou clientes. Tudo em um só lugar, sem depender do Excel."
+      },
+      "apis": {
+        "title": "Suas ferramentas conversando",
+        "description": "Conecto os sistemas que você já usa para não digitar os mesmos dados duas vezes: seu site, seu faturamento, sua loja ou seu depósito."
+      },
+      "frontend": {
+        "title": "Páginas que trazem clientes",
+        "description": "Páginas pensadas para que quem entra fale com você ou compre: mensagem clara, carregamento rápido e botão de contato sempre à mão."
+      }
+    }
+  },
+  "industries": {
+    "title": "Trabalho com o seu segmento",
+    "subtitle": "Cada negócio tem seu jeito de trabalhar. O sistema se adapta ao seu, e não o contrário.",
+    "items": {
+      "retail": {
+        "title": "Lojas e comércio",
+        "description": "Controle o estoque, as vendas do dia e o faturamento sem perder tempo."
+      },
+      "logistics": {
+        "title": "Transporte e entregas",
+        "description": "Saiba onde está cada envio, quem está levando e o que foi entregue no prazo."
+      },
+      "health": {
+        "title": "Clínicas e saúde",
+        "description": "Agendamentos, fichas de pacientes e a agenda de cada profissional em um só lugar."
+      },
+      "education": {
+        "title": "Escolas e cursos",
+        "description": "Matrículas, pagamentos e acompanhamento de cada aluno, sempre em dia."
+      },
+      "hospitality": {
+        "title": "Bares, restaurantes e hotéis",
+        "description": "Reservas, pedidos e controle de consumo, sem papel nem anotações soltas."
+      },
+      "professional": {
+        "title": "Escritórios e serviços",
+        "description": "Seus clientes, os trabalhos em andamento e as cobranças sempre organizados."
+      }
+    }
+  },
+  "projects": {
+    "title": "Exemplos do meu trabalho",
+    "subtitle": "Abra qualquer um para ver o que resolve e como se usa. Se algo parecido servir para você, adapto ao seu negócio.",
+    "filtersLabel": "Filtrar exemplos por tipo",
+    "filters": {
+      "ALL": "Todos",
+      "FULLSTACK": "Sistemas completos",
+      "BACKEND": "Automação e dados",
+      "FRONTEND": "Sites e painéis"
+    },
+    "status": {
+      "LIVE": "Pode testar",
+      "IN_PROGRESS": "Em construção",
+      "PLANNED": "Em breve"
+    },
+    "actions": {
+      "details": "Ver do que se trata",
+      "demo": "Testar a demo",
+      "repository": "Ver o código",
+      "request": "Quero algo assim",
+      "close": "Fechar"
+    },
+    "labels": {
+      "industry": "Segmento",
+      "stack": "Ferramentas",
+      "scope": "O que inclui",
+      "status": "Status"
+    },
+    "empty": "Ainda não há exemplos deste tipo publicados. Fale comigo e mostro trabalhos parecidos.",
+    "roadmapNote": "Este exemplo ainda está sendo construído. Se você precisa de algo assim, me escreva e vemos juntos.",
+    "count_one": "{{count}} exemplo",
+    "count_other": "{{count}} exemplos"
+  },
+  "tech": {
+    "title": "Como é feito",
+    "subtitle": "Uso ferramentas padrão do mercado. Se os nomes não dizem nada para você, fique tranquilo: são o que garante um sistema seguro, rápido e fácil de manter no futuro.",
+    "areas": {
+      "backend": "O motor, o que não se vê",
+      "frontend": "O que você e seus clientes veem",
+      "data": "Onde tudo fica guardado"
+    }
+  },
+  "contact": {
+    "title": "Conte o que você precisa",
+    "subtitle": "Você não precisa entender de tecnologia nem ter tudo definido. Conte o que complica o seu dia a dia e respondo com uma proposta, um preço e um prazo concretos.",
+    "direct": "Me escreva por email",
+    "whatsapp": "WhatsApp",
+    "form": {
+      "name": "Seu nome",
+      "namePlaceholder": "Como devo te chamar",
+      "email": "Seu email",
+      "emailPlaceholder": "para eu poder responder",
+      "industry": "Seu segmento",
+      "industryPlaceholder": "Escolha o que você faz",
+      "industryOther": "Outro",
+      "message": "O que você precisa",
+      "messagePlaceholder": "Por exemplo: quero um site para a minha loja, ou preciso controlar o estoque sem planilhas.",
+      "submit": "Enviar consulta",
+      "subject": "Consulta de {{name}}"
+    }
+  },
+  "footer": {
+    "rights": "© {{year}} DevPortfolio.",
+    "available": "Disponível para novos projetos."
+  }
+}

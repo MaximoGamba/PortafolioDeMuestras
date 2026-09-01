@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "title": "DevPortfolio | Websites and custom systems for your business",
+    "description": "I build websites and systems that keep your business organised: stock, sales, bookings, clients and payments. Made to measure, clear pricing, clients worldwide."
+  },
+  "nav": {
+    "services": "What I do",
+    "industries": "Your sector",
+    "projects": "Examples",
+    "tech": "How I work",
+    "contact": "Contact",
+    "whatsapp": "WhatsApp",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "language": {
+    "label": "Language",
+    "select": "Select language"
+  },
+  "hero": {
+    "badge": "Websites and custom systems",
+    "title": "I organise your business with a website and a system built around you.",
+    "subtitle": "If you still run things on spreadsheets, notebooks or scattered messages, I'll build you one simple tool with everything in one place: sales, stock, bookings or clients. Plus the website that helps people find you.",
+    "ctaPrimary": "See examples",
+    "ctaSecondary": "Contact",
+    "highlights": {
+      "pricing": "Clear pricing",
+      "availability": "I can start this week",
+      "progress": "You see progress as we go",
+      "global": "Clients worldwide"
+    }
+  },
+  "services": {
+    "title": "What I can do for you",
+    "subtitle": "Tools that are simple to use, built for the day-to-day of your business.",
+    "items": {
+      "fullstack": {
+        "title": "Websites and online shops",
+        "description": "Your own site, fast and looking great on mobile. To show what you do, receive enquiries or sell online."
+      },
+      "management": {
+        "title": "Systems that organise your business",
+        "description": "Software made to measure to handle stock, sales, bookings or clients. Everything in one place, with no more spreadsheets."
+      },
+      "apis": {
+        "title": "Getting your tools to talk",
+        "description": "I connect the systems you already use so you never enter the same data twice: your site, your invoicing, your shop or your warehouse."
+      },
+      "frontend": {
+        "title": "Pages that bring in clients",
+        "description": "Pages designed so visitors get in touch or buy: a clear message, fast loading and a contact button always within reach."
+      }
+    }
+  },
+  "industries": {
+    "title": "I work with your sector",
+    "subtitle": "Every business has its own way of working. The system adapts to yours, not the other way around.",
+    "items": {
+      "retail": {
+        "title": "Shops and retail",
+        "description": "Keep track of stock, daily sales and invoicing without wasting time."
+      },
+      "logistics": {
+        "title": "Transport and deliveries",
+        "description": "Know where every shipment is, who is carrying it and what arrived on time."
+      },
+      "health": {
+        "title": "Clinics and healthcare",
+        "description": "Appointments, patient records and each professional's calendar in one place."
+      },
+      "education": {
+        "title": "Schools and courses",
+        "description": "Enrolment, payments and student progress, always up to date."
+      },
+      "hospitality": {
+        "title": "Bars, restaurants and hotels",
+        "description": "Bookings, orders and consumption tracking, with no paper slips."
+      },
+      "professional": {
+        "title": "Firms and services",
+        "description": "Your clients, ongoing work and payments, tidy and always at hand."
+      }
+    }
+  },
+  "projects": {
+    "title": "Examples of my work",
+    "subtitle": "Open any of them to see what it solves and how it's used. If something similar fits you, I'll adapt it to your business.",
+    "filtersLabel": "Filter examples by type",
+    "filters": {
+      "ALL": "All",
+      "FULLSTACK": "Complete systems",
+      "BACKEND": "Automation and data",
+      "FRONTEND": "Sites and dashboards"
+    },
+    "status": {
+      "LIVE": "Ready to try",
+      "IN_PROGRESS": "Being built",
+      "PLANNED": "Coming soon"
+    },
+    "actions": {
+      "details": "See what it does",
+      "demo": "Try the demo",
+      "repository": "View the code",
+      "request": "I want something like this",
+      "close": "Close"
+    },
+    "labels": {
+      "industry": "Sector",
+      "stack": "Tools",
+      "scope": "What it includes",
+      "status": "Status"
+    },
+    "empty": "No examples of this type published yet. Get in touch and I'll show you similar work.",
+    "roadmapNote": "I'm still building this example. If you need something like it, write to me and we'll go through it together.",
+    "count_one": "{{count}} example",
+    "count_other": "{{count}} examples"
+  },
+  "tech": {
+    "title": "How it's built",
+    "subtitle": "I use industry-standard tools. If the names mean nothing to you, don't worry: they're what makes your system secure, fast and easy to maintain in the future.",
+    "areas": {
+      "backend": "The engine, behind the scenes",
+      "frontend": "What you and your clients see",
+      "data": "Where everything is stored"
+    }
+  },
+  "contact": {
+    "title": "Tell me what you need",
+    "subtitle": "You don't need to know about technology or have everything figured out. Tell me what makes your day harder and I'll reply with a proposal, a price and a timeline.",
+    "direct": "Email me",
+    "whatsapp": "WhatsApp",
+    "form": {
+      "name": "Your name",
+      "namePlaceholder": "What should I call you",
+      "email": "Your email",
+      "emailPlaceholder": "so I can reply",
+      "industry": "Your sector",
+      "industryPlaceholder": "Choose what you do",
+      "industryOther": "Other",
+      "message": "What you need",
+      "messagePlaceholder": "For example: I want a website for my shop, or I need to track stock without spreadsheets.",
+      "submit": "Send enquiry",
+      "subject": "Enquiry from {{name}}"
+    }
+  },
+  "footer": {
+    "rights": "© {{year}} DevPortfolio.",
+    "available": "Available for new projects."
+  }
+}

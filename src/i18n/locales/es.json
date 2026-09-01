@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "title": "DevPortfolio | Páginas web y sistemas a medida para tu negocio",
+    "description": "Hago páginas web y sistemas para ordenar tu negocio: stock, ventas, turnos, clientes y cobros. Trabajo a medida, con presupuesto claro y clientes en todo el mundo."
+  },
+  "nav": {
+    "services": "Qué hago",
+    "industries": "Para tu rubro",
+    "projects": "Ejemplos",
+    "tech": "Cómo trabajo",
+    "contact": "Contacto",
+    "whatsapp": "WhatsApp",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú"
+  },
+  "language": {
+    "label": "Idioma",
+    "select": "Seleccionar idioma"
+  },
+  "hero": {
+    "badge": "Páginas web y sistemas a medida",
+    "title": "Ordeno tu negocio con una web y un sistema hechos a tu medida.",
+    "subtitle": "Si trabajás con planillas, cuadernos o mensajes sueltos, te armo una herramienta simple donde tengas todo junto: ventas, stock, turnos o clientes. Y la página web para que te encuentren.",
+    "ctaPrimary": "Ver ejemplos",
+    "ctaSecondary": "Contacto",
+    "highlights": {
+      "pricing": "Presupuesto claro",
+      "availability": "Puedo empezar esta semana",
+      "progress": "Vas viendo los avances",
+      "global": "Clientes en todo el mundo"
+    }
+  },
+  "services": {
+    "title": "Qué puedo hacer por vos",
+    "subtitle": "Herramientas simples de usar, pensadas para el día a día de tu negocio.",
+    "items": {
+      "fullstack": {
+        "title": "Páginas y tiendas web",
+        "description": "Tu sitio propio, rápido y que se ve bien en el celular. Para mostrar lo que hacés, recibir consultas o vender online."
+      },
+      "management": {
+        "title": "Sistemas para ordenar tu negocio",
+        "description": "Un programa hecho a tu medida para llevar el stock, las ventas, los turnos o los clientes. Todo en un solo lugar y sin depender de Excel."
+      },
+      "apis": {
+        "title": "Que tus herramientas se hablen",
+        "description": "Conecto los sistemas que ya usás para que no cargues los mismos datos dos veces: tu web, tu facturación, tu tienda o tu depósito."
+      },
+      "frontend": {
+        "title": "Páginas que traen clientes",
+        "description": "Páginas pensadas para que quien entra te escriba o te compre: mensaje claro, carga rápida y un botón de contacto siempre a mano."
+      }
+    }
+  },
+  "industries": {
+    "title": "Trabajo con tu rubro",
+    "subtitle": "Cada negocio tiene su forma de trabajar. El sistema se adapta a la tuya, no al revés.",
+    "items": {
+      "retail": {
+        "title": "Comercios y tiendas",
+        "description": "Controlá el stock, las ventas del día y la facturación sin perder tiempo."
+      },
+      "logistics": {
+        "title": "Transporte y envíos",
+        "description": "Sabé dónde está cada envío, quién lo lleva y qué se entregó a tiempo."
+      },
+      "health": {
+        "title": "Consultorios y salud",
+        "description": "Turnos, fichas de pacientes y la agenda de cada profesional en un solo lugar."
+      },
+      "education": {
+        "title": "Escuelas y cursos",
+        "description": "Inscripciones, pagos y el seguimiento de cada alumno, siempre al día."
+      },
+      "hospitality": {
+        "title": "Bares, restaurantes y hoteles",
+        "description": "Reservas, pedidos y control de consumos, sin papeles ni anotaciones sueltas."
+      },
+      "professional": {
+        "title": "Estudios y servicios",
+        "description": "Tus clientes, los trabajos en curso y los cobros ordenados y a mano."
+      }
+    }
+  },
+  "projects": {
+    "title": "Ejemplos de lo que hago",
+    "subtitle": "Entrá a cualquiera para ver qué resuelve y cómo se usa. Si te sirve algo parecido, lo adapto a tu negocio.",
+    "filtersLabel": "Filtrar ejemplos por tipo",
+    "filters": {
+      "ALL": "Todos",
+      "FULLSTACK": "Sistemas completos",
+      "BACKEND": "Automatización y datos",
+      "FRONTEND": "Sitios y paneles"
+    },
+    "status": {
+      "LIVE": "Se puede probar",
+      "IN_PROGRESS": "En construcción",
+      "PLANNED": "Próximamente"
+    },
+    "actions": {
+      "details": "Ver de qué se trata",
+      "demo": "Probar la demo",
+      "repository": "Ver el código",
+      "request": "Quiero algo así",
+      "close": "Cerrar"
+    },
+    "labels": {
+      "industry": "Rubro",
+      "stack": "Herramientas",
+      "scope": "Qué incluye",
+      "status": "Estado"
+    },
+    "empty": "Todavía no hay ejemplos de este tipo publicados. Escribime y te muestro trabajos parecidos.",
+    "roadmapNote": "Este ejemplo todavía lo estoy armando. Si necesitás algo así, escribime y lo vemos juntos.",
+    "count_one": "{{count}} ejemplo",
+    "count_other": "{{count}} ejemplos"
+  },
+  "tech": {
+    "title": "Cómo está hecho",
+    "subtitle": "Uso herramientas estándar en la industria. Si no te dicen nada, tranquilo: significan que tu sistema va a ser seguro, rápido y fácil de mantener en el futuro.",
+    "areas": {
+      "backend": "El motor, lo que no se ve",
+      "frontend": "Lo que ven vos y tus clientes",
+      "data": "Dónde se guarda todo"
+    }
+  },
+  "contact": {
+    "title": "Contame qué necesitás",
+    "subtitle": "No hace falta que sepas de tecnología ni que tengas todo definido. Contame qué te complica el día a día y te respondo con una propuesta, un precio y un plazo concretos.",
+    "direct": "Escribime por mail",
+    "whatsapp": "WhatsApp",
+    "form": {
+      "name": "Tu nombre",
+      "namePlaceholder": "Cómo te llamás",
+      "email": "Tu email",
+      "emailPlaceholder": "para poder responderte",
+      "industry": "Tu rubro",
+      "industryPlaceholder": "Elegí a qué te dedicás",
+      "industryOther": "Otro",
+      "message": "Qué necesitás",
+      "messagePlaceholder": "Por ejemplo: quiero una web para mi local, o necesito llevar el stock sin Excel.",
+      "submit": "Enviar consulta",
+      "subject": "Consulta de {{name}}"
+    }
+  },
+  "footer": {
+    "rights": "© {{year}} DevPortfolio.",
+    "available": "Disponible para nuevos proyectos."
+  }
+}
