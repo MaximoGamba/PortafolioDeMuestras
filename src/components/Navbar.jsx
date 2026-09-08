@@ -23,7 +23,7 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 z-50 w-full border-b border-white/10 bg-[#0D0D0E]/70 backdrop-blur-xl transition-all duration-300">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-6">
         <a className="flex items-center gap-4" href="#inicio" onClick={() => setMenuOpen(false)}>
           <BrandMark />
           <span className="hidden font-mono text-sm font-medium text-white sm:block">
@@ -71,7 +71,7 @@ export default function Navbar() {
 
       {menuOpen && (
         <nav className="border-t border-white/10 bg-[#0D0D0E]/90 backdrop-blur-xl lg:hidden">
-          <div className="mx-auto flex max-w-7xl flex-col gap-1 px-6 py-4">
+          <div className="mx-auto flex max-w-7xl flex-col gap-1 px-5 py-4 sm:px-6">
             {NAV_LINKS.map((id) => (
               <a
                 key={id}

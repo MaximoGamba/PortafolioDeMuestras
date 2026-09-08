@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next'
 import { PROJECT_STATUS } from '../features/projects/projectsData'
 
 const STATUS_STYLES = {
-  [PROJECT_STATUS.LIVE]: { chip: 'bg-primary/10 text-primary', dot: 'bg-primary' },
+  [PROJECT_STATUS.LIVE]: { chip: 'bg-primary/10 text-primary-text', dot: 'bg-primary-text' },
   [PROJECT_STATUS.IN_PROGRESS]: { chip: 'bg-white/5 text-white', dot: 'bg-white/60' },
   [PROJECT_STATUS.PLANNED]: { chip: 'bg-white/5 text-meta', dot: 'bg-meta' },
 }

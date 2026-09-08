@@ -140,7 +140,15 @@
       "message": "What you need",
       "messagePlaceholder": "For example: I want a website for my shop, or I need to track stock without spreadsheets.",
       "submit": "Send enquiry",
-      "subject": "Enquiry from {{name}}"
+      "subject": "Enquiry from {{name}}",
+      "optional": "optional",
+      "sending": "Sending…",
+      "successTitle": "Got it, your message is in!",
+      "successBody": "I'll reply within the next 24 hours. If it's urgent, reach me on WhatsApp.",
+      "sendAnother": "Send another enquiry",
+      "errorTitle": "I couldn't send the message",
+      "errorBody": "It may have been a connection problem. Try again or reach me directly on WhatsApp.",
+      "retry": "Try again"
     }
   },
   "footer": {

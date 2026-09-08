@@ -6,9 +6,13 @@
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
 
   --color-background: #0d0d0e;
+  /* Azul de acción: sólo como fondo de botones (blanco encima = 4.70:1). */
   --color-primary: #0071e3;
+  /* Variante legible del azul cuando se usa como texto sobre el fondo oscuro (6.31:1). */
+  --color-primary-text: #3d96f0;
   --color-muted: #a1a1a6;
-  --color-meta: #6e6e73;
+  /* Gris de etiquetas y metadata: 5.30:1 sobre el fondo, cumple WCAG AA. */
+  --color-meta: #85858c;
 }
 
 body {
@@ -23,6 +27,18 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Foco visible para navegación con teclado en todo lo interactivo. */
+:focus-visible {
+  outline: 2px solid var(--color-primary-text);
+  outline-offset: 2px;
 }
 
 ::selection {

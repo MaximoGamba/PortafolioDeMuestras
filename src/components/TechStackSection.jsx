@@ -1,41 +1,48 @@
 import { useTranslation } from 'react-i18next'
 import { TECH_AREAS } from '../data/content'
 import Icon from './Icon'
+import Section from './Section'
 import SectionHeading from './SectionHeading'
 
 export default function TechStackSection() {
   const { t } = useTranslation()
 
   return (
-    <section id="tecnologias" className="relative py-32">
-      <div className="mx-auto max-w-7xl px-6">
-        <SectionHeading title={t('tech.title')} subtitle={t('tech.subtitle')} className="mb-16" />
+    <Section id="tecnologias">
+      <SectionHeading
+        title={t('tech.title')}
+        subtitle={t('tech.subtitle')}
+        className="mb-10 md:mb-16"
+      />
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-          {TECH_AREAS.map((area) => (
-            <div
-              key={area.id}
-              className="rounded-3xl border border-white/10 bg-neutral-900/60 p-8 backdrop-blur-xl transition-colors hover:bg-neutral-900/80"
-            >
-              <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-2xl bg-white/5">
-                <Icon name={area.icon} className="text-[24px] text-white" />
-              </div>
-              <h3 className="mb-4 text-xl font-medium text-white">{t(`tech.areas.${area.id}`)}</h3>
-              <ul className="divide-y divide-white/5">
-                {area.items.map((item) => (
-                  <li
-                    key={item}
-                    className="flex items-center justify-between gap-4 rounded px-1 py-3 transition-colors hover:bg-white/5"
-                  >
-                    <span className="text-[15px] text-muted">{item}</span>
-                    <Icon name="check_small" className="text-[20px] text-meta" />
-                  </li>
-                ))}
-              </ul>
+      {/* Franja abierta, sin tarjetas: aligera el bloque final antes del contacto. */}
+      <div className="grid gap-10 border-t border-white/10 pt-10 md:grid-cols-3 md:gap-0">
+        {TECH_AREAS.map((area, index) => (
+          <div
+            key={area.id}
+            className={
+              index === 0
+                ? 'md:pr-8'
+                : 'md:border-l md:border-white/10 md:px-8 md:last:pr-0'
+            }
+          >
+            <div className="mb-4 flex items-center gap-3">
+              <Icon name={area.icon} className="text-[22px] text-meta" />
+              <h3 className="text-base font-medium text-white">{t(`tech.areas.${area.id}`)}</h3>
             </div>
-          ))}
-        </div>
+            <ul className="flex flex-wrap gap-2">
+              {area.items.map((item) => (
+                <li
+                  key={item}
+                  className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 font-mono text-xs text-muted"
+                >
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
-    </section>
+    </Section>
   )
 }

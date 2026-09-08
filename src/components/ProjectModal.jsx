@@ -1,11 +1,11 @@
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useDispatch, useSelector } from 'react-redux'
 import { PROJECT_STATUS } from '../features/projects/projectsData'
 import { closeProject, selectSelectedProject } from '../features/projects/projectsSlice'
 import { useLocalize } from '../i18n/localize'
 import Icon from './Icon'
-import ProjectStatusBadge from './ProjectStatusBadge'
+import ProjectMedia from './ProjectMedia'
 import { GitHubIcon } from './icons'
 
 export default function ProjectModal() {
@@ -13,12 +13,44 @@ export default function ProjectModal() {
   const localize = useLocalize()
   const dispatch = useDispatch()
   const project = useSelector(selectSelectedProject)
+  const dialogRef = useRef(null)
+  const lastFocusedRef = useRef(null)
 
   useEffect(() => {
     if (!project) return
 
+    lastFocusedRef.current = document.activeElement
+
+    const getFocusable = () =>
+      Array.from(
+        dialogRef.current?.querySelectorAll(
+          'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])',
+        ) ?? [],
+      ).filter((element) => element.offsetParent !== null)
+
+    getFocusable()[0]?.focus()
+
+    // Mantiene el foco dentro del modal mientras está abierto.
     const handleKeyDown = (event) => {
-      if (event.key === 'Escape') dispatch(closeProject())
+      if (event.key === 'Escape') {
+        dispatch(closeProject())
+        return
+      }
+      if (event.key !== 'Tab') return
+
+      const items = getFocusable()
+      if (items.length === 0) return
+
+      const first = items[0]
+      const last = items[items.length - 1]
+
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault()
+        last.focus()
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault()
+        first.focus()
+      }
     }
 
     const previousOverflow = document.body.style.overflow
@@ -28,6 +60,7 @@ export default function ProjectModal() {
     return () => {
       document.body.style.overflow = previousOverflow
       document.removeEventListener('keydown', handleKeyDown)
+      lastFocusedRef.current?.focus?.()
     }
   }, [project, dispatch])
 
@@ -41,14 +74,14 @@ export default function ProjectModal() {
       onClick={() => dispatch(closeProject())}
     >
       <div
+        ref={dialogRef}
         role="dialog"
         aria-modal="true"
         aria-label={localize(project.title)}
         onClick={(event) => event.stopPropagation()}
-        className="max-h-[85svh] w-full max-w-2xl overflow-y-auto rounded-3xl border border-white/10 bg-neutral-900/80 p-8 shadow-[0_40px_120px_rgba(0,0,0,0.6)] backdrop-blur-xl md:p-10"
+        className="max-h-[88svh] w-full max-w-2xl overflow-y-auto overscroll-contain rounded-3xl border border-white/10 bg-neutral-900/80 p-6 shadow-[0_40px_120px_rgba(0,0,0,0.6)] backdrop-blur-xl sm:p-8 md:p-10"
       >
-        <div className="mb-6 flex items-start justify-between gap-4">
-          <ProjectStatusBadge status={project.status} />
+        <div className="mb-4 flex items-center justify-end">
           <button
             type="button"
             onClick={() => dispatch(closeProject())}
@@ -59,16 +92,20 @@ export default function ProjectModal() {
           </button>
         </div>
 
+        <ProjectMedia project={project} className="mb-6" />
+
         {project.industry && (
           <p className="mb-2 font-mono text-xs text-meta">
             {t('projects.labels.industry')} · {t(`industries.items.${project.industry}.title`)}
           </p>
         )}
 
-        <h2 className="mb-4 font-display text-3xl font-semibold text-white">
+        <h2 className="mb-4 font-display text-2xl font-semibold text-white sm:text-3xl">
           {localize(project.title)}
         </h2>
-        <p className="text-lg leading-relaxed text-muted">{localize(project.description)}</p>
+        <p className="text-base leading-relaxed text-muted sm:text-lg">
+          {localize(project.description)}
+        </p>
 
         {scope.length > 0 && (
           <div className="mt-8">
@@ -78,7 +115,7 @@ export default function ProjectModal() {
             <ul className="divide-y divide-white/5 border-t border-white/5">
               {scope.map((item) => (
                 <li key={item} className="flex items-start gap-3 py-3">
-                  <Icon name="check_small" className="mt-0.5 text-[20px] text-primary" />
+                  <Icon name="check_small" className="mt-0.5 text-[20px] text-primary-text" />
                   <span className="text-[15px] text-muted">{item}</span>
                 </li>
               ))}
@@ -108,7 +145,7 @@ export default function ProjectModal() {
           </p>
         )}
 
-        <div className="mt-8 flex flex-wrap gap-3">
+        <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
           {project.liveUrl && (
             <a
               href={project.liveUrl}

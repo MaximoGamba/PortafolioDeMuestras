@@ -22,7 +22,7 @@ export default function CategoryFilters() {
     <div
       role="group"
       aria-label={t('projects.filtersLabel')}
-      className="inline-flex flex-wrap gap-1 rounded-full border border-white/10 bg-white/5 p-1 backdrop-blur-xl"
+      className="flex flex-wrap justify-center gap-1 rounded-3xl border border-white/10 bg-white/5 p-1 backdrop-blur-xl sm:rounded-full"
     >
       {FILTERS.map((category) => {
         const isActive = category === activeCategory
@@ -32,7 +32,7 @@ export default function CategoryFilters() {
             type="button"
             aria-pressed={isActive}
             onClick={() => dispatch(setActiveCategory(category))}
-            className={`rounded-full px-5 py-2 text-sm font-medium transition-all duration-200 active:scale-95 ${
+            className={`rounded-full px-4 py-2 text-sm font-medium transition-all duration-200 active:scale-95 sm:px-5 ${
               isActive
                 ? 'bg-white text-black'
                 : 'text-muted hover:bg-white/5 hover:text-white'

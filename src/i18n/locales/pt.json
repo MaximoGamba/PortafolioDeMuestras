@@ -140,7 +140,15 @@
       "message": "O que você precisa",
       "messagePlaceholder": "Por exemplo: quero um site para a minha loja, ou preciso controlar o estoque sem planilhas.",
       "submit": "Enviar consulta",
-      "subject": "Consulta de {{name}}"
+      "subject": "Consulta de {{name}}",
+      "optional": "opcional",
+      "sending": "Enviando…",
+      "successTitle": "Pronto, recebi sua mensagem!",
+      "successBody": "Respondo nas próximas 24 horas. Se for urgente, me chame no WhatsApp.",
+      "sendAnother": "Enviar outra consulta",
+      "errorTitle": "Não consegui enviar a mensagem",
+      "errorBody": "Pode ter sido um problema de conexão. Tente de novo ou me chame direto no WhatsApp.",
+      "retry": "Tentar de novo"
     }
   },
   "footer": {

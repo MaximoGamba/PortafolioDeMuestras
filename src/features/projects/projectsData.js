@@ -29,6 +29,8 @@ export const STATUS_ORDER = {
  *   tags: ['Java', 'Spring Boot'],
  *   githubUrl: 'https://github.com/...',   // null si todavía no es público
  *   liveUrl: 'https://...',                // null si todavía no hay demo
+ *   image: '/proyectos/mi-captura.png',    // null muestra un marcador
+ *   imageAlt: 'Descripción de la captura',
  *   title: { es: '', en: '', pt: '' },
  *   description: { es: '', en: '', pt: '' },
  *   scope: { es: [], en: [], pt: [] },
@@ -44,8 +46,11 @@ export const initialProjects = [
     industry: 'retail',
     status: PROJECT_STATUS.IN_PROGRESS,
     tags: ['Java', 'Spring Boot', 'React', 'MySQL'],
-    githubUrl: 'https://github.com/maximo/stock-y-ventas',
+    // Cuando publiques el repo: 'https://github.com/MaximoGamba/stock-y-ventas'
+    githubUrl: null,
     liveUrl: null,
+    image: null,
+    imageAlt: null,
     title: {
       es: 'Control de stock y ventas',
       en: 'Stock and sales control',
@@ -80,8 +85,11 @@ export const initialProjects = [
     industry: null,
     status: PROJECT_STATUS.IN_PROGRESS,
     tags: ['Java', 'Spring Boot', 'Spring Security', 'MySQL'],
-    githubUrl: 'https://github.com/maximo/acceso-seguro',
+    // Cuando publiques el repo: 'https://github.com/MaximoGamba/acceso-seguro'
+    githubUrl: null,
     liveUrl: null,
+    image: null,
+    imageAlt: null,
     title: {
       es: 'Acceso seguro para tu sistema',
       en: 'Secure access for your system',
@@ -118,6 +126,8 @@ export const initialProjects = [
     tags: ['Java', 'Spring Boot', 'React', 'MySQL'],
     githubUrl: null,
     liveUrl: null,
+    image: null,
+    imageAlt: null,
     title: {
       es: 'Turnos online',
       en: 'Online bookings',
@@ -154,6 +164,8 @@ export const initialProjects = [
     tags: ['Java', 'Spring Boot', 'React', 'MySQL'],
     githubUrl: null,
     liveUrl: null,
+    image: null,
+    imageAlt: null,
     title: {
       es: 'Seguimiento de envíos',
       en: 'Delivery tracking',
@@ -190,6 +202,8 @@ export const initialProjects = [
     tags: ['Java', 'Spring Boot', 'MySQL'],
     githubUrl: null,
     liveUrl: null,
+    image: null,
+    imageAlt: null,
     title: {
       es: 'Clientes y cobros',
       en: 'Clients and payments',
@@ -226,6 +240,8 @@ export const initialProjects = [
     tags: ['React', 'Redux Toolkit', 'Tailwind CSS'],
     githubUrl: null,
     liveUrl: null,
+    image: null,
+    imageAlt: null,
     title: {
       es: 'Tablero de resultados',
       en: 'Results dashboard',

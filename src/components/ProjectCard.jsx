@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux'
 import { useLocalize } from '../i18n/localize'
 import { openProject } from '../features/projects/projectsSlice'
 import Icon from './Icon'
-import ProjectStatusBadge from './ProjectStatusBadge'
+import ProjectMedia from './ProjectMedia'
 import { GitHubIcon } from './icons'
 
 export default function ProjectCard({ project }) {
@@ -12,13 +12,8 @@ export default function ProjectCard({ project }) {
   const dispatch = useDispatch()
 
   return (
-    <article className="flex h-full flex-col rounded-3xl border border-white/10 bg-neutral-900/60 p-8 backdrop-blur-xl transition-colors hover:bg-neutral-900/80">
-      <div className="mb-6 flex items-center justify-between gap-4">
-        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/5">
-          <Icon name="deployed_code" className="text-[24px] text-white" />
-        </div>
-        <ProjectStatusBadge status={project.status} />
-      </div>
+    <article className="flex h-full flex-col rounded-3xl border border-white/10 bg-neutral-900/60 p-5 backdrop-blur-xl transition-colors hover:bg-neutral-900/80 sm:p-6">
+      <ProjectMedia project={project} className="mb-5" />
 
       {project.industry && (
         <p className="mb-2 font-mono text-xs text-meta">
@@ -26,12 +21,14 @@ export default function ProjectCard({ project }) {
         </p>
       )}
 
-      <h3 className="mb-3 text-xl font-medium text-white">{localize(project.title)}</h3>
+      <h3 className="mb-3 text-lg font-medium text-white sm:text-xl">
+        {localize(project.title)}
+      </h3>
       <p className="flex-1 text-[15px] leading-relaxed text-muted">
         {localize(project.description)}
       </p>
 
-      <ul className="mt-6 flex flex-wrap gap-2">
+      <ul className="mt-5 flex flex-wrap gap-2">
         {project.tags.map((tag) => (
           <li
             key={tag}
@@ -42,7 +39,7 @@ export default function ProjectCard({ project }) {
         ))}
       </ul>
 
-      <div className="mt-8 flex flex-wrap gap-3">
+      <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
         <button
           type="button"
           onClick={() => dispatch(openProject(project.id))}

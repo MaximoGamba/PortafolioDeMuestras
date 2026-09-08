@@ -7,6 +7,7 @@ import ProjectModal from './components/ProjectModal'
 import ProjectsGrid from './components/ProjectsGrid'
 import ServicesSection from './components/ServicesSection'
 import TechStackSection from './components/TechStackSection'
+import WhatsAppFab from './components/WhatsAppFab'
 import useDocumentMeta from './hooks/useDocumentMeta'
 
 export default function App() {
@@ -25,6 +26,7 @@ export default function App() {
       </main>
       <Footer />
       <ProjectModal />
+      <WhatsAppFab />
     </div>
   )
 }
